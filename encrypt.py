@@ -10,7 +10,7 @@ def encrypt():
 			char_place.append(chars)
 		amount = raw_input("Enter a key number (1-9): ")
 		for i in char_place:
-			new_message += chr(i + int(amount))
+			new_message += chr(i + int(amount)).upper()
 		print("Your coded message is: {}").format(new_message)
 	else:
 		print("Well then get the hell outta here!")

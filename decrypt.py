@@ -10,7 +10,7 @@ def decrypt():
 			char_place.append(chars)
 		code = raw_input("Please enter your message key: ")
 		for i in char_place:
-			decoded_message += chr(i - int(code))
+			decoded_message += chr(i - int(code)).lower()
 		print ("The secret message is: {}").format(decoded_message)
 	else:
 		print("k, bye")
