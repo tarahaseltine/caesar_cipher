@@ -5,7 +5,7 @@ def decrypt():
 	answer = raw_input("Would you like to decrypt a message? Enter y or n: ")
 	if answer.lower() == 'y':
 		message = raw_input("Please enter your coded message: ")
-		for letter in message:
+		for letter in message.lower():
 			chars = ord(letter)
 			char_place.append(chars)
 		code = raw_input("Please enter your message key: ")

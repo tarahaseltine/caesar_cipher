@@ -5,7 +5,7 @@ def encrypt():
 	answer = raw_input("Would you like to encrypt a message? Enter y or n: ")
 	if answer.lower() == "y":
 		message = raw_input("Please enter your message here: ")
-		for letter in message:
+		for letter in message.upper():
 			chars = ord(letter)
 			char_place.append(chars)
 		amount = raw_input("Enter a key number (1-9): ")
